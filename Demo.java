@@ -72,14 +72,14 @@ public class Demo {
     int[][]x = new int[rows][cols];
     for (int i = 0; i < rows; i++) {
       x[i] = new int[cols];
-      for (int j = 0; j < rows && j < maxValue; j++){
+      for (int j = 0; j < x[i].length && j < maxValue; j++){
           x[i][j] = (int)(Math.random() * (maxValue + 1));
       }
     }
     return x;
   }
 
-  public static int[][] create2DArrayRandomzied(int rows, int cols, int maxValue) {
+  public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue) {
     int[][]y = new int[rows][cols];
     for (int i = 0; i < rows; i++) {
       y[i] = new int[(int)(Math.random() * (cols + 1))];
